@@ -122,21 +122,21 @@
     <div class="container pt-5">
         <div class="row px-3">
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-green px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
                 </div>
             </div>
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-green px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
                 </div>
             </div>
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-green px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
@@ -152,21 +152,21 @@
     <div class="container py-5">
         <div class="row px-3">
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-purple px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
                 </div>
             </div>
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-purple  px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
                 </div>
             </div>
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('../img/home-carousel-back1.png') center no-repeat;">
+            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
                 <div class="col-carousel-text col-carousel-text-purple px-3 py-3">
                     <h5>Notícia</h5>
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
