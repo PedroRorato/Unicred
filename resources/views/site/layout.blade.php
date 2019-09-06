@@ -26,7 +26,7 @@
     <script src="{{ asset('js/dashboard.js') }}" defer></script>
     <script type="text/javascript">
         $(window).on('load', function() {
-            $("@yield('button')").css("color", "#cf0600");
+            $("@yield('button')").css("border-bottom", "1px solid #AA924C");
         });
     </script>
     <title>Unicred - @yield('title')</title>
@@ -43,24 +43,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link pb-0 px-0" href="/quem-somos">
-                            <span class="underline">Quem Somos</span>
-                        </a>
+                        <a id="nav-quem-somos" class="nav-link pb-0 px-0" href="/quem-somos">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pb-0 px-0" href="/projetos">Projetos</a>
+                        <a id="nav-projetos" class="nav-link pb-0 px-0" href="/projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pb-0 px-0" href="/eventos">Eventos</a>
+                        <a id="nav-eventos" class="nav-link pb-0 px-0" href="/eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pb-0 px-0" href="/noticias">Notícias</a>
+                        <a id="nav-noticias" class="nav-link pb-0 px-0" href="/noticias">Notícias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pb-0 px-0" href="/instituicoes-parceiras">Instituições Parceiras</a>
+                        <a id="nav-i-parceiras" class="nav-link pb-0 px-0" href="/instituicoes-parceiras">Instituições Parceiras</a>
                     </li>
                     <li class="nav-item pr-4">
-                        <a class="nav-link pb-0 px-0" href="/contato">Contato</a>
+                        <a id="nav-contato" class="nav-link pb-0 px-0" href="/contato">Contato</a>
                     </li>
                     <li class="nav-item px-1">
                         <a class="btn btn-header" role="button" href="/contato">
@@ -90,14 +88,14 @@
         @yield('content')
     </div>
     <footer class="pt-5">
-        <div class="container py-5">
+        <div class="container">
             <div class="row justify-content-between pb-5">
                 <!-- ESQUERDA -->
-                <div class="col-md-7 col-xl-5">
+                <div class="col-lg-7 col-xl-5 py-5">
                     <div class="row mx-0 px-3">
-                        <img src="{{ URL::asset('img/logo-unicred.png') }}" height="70" class="d-inline-block align-top">
+                        <img src="{{ URL::asset('img/logo-unicred.png') }}" height="73" class="d-inline-block align-top">
                     </div>
-                    <div class="row mx-0 px-3 py-4">
+                    <div class="row mx-0 px-3 py-3">
                         <div class="col-6">
                             <div class="row py-2"><span class="mr-2"></span>Quem Somos</div>
                             <div class="row py-2"><span class="mr-2"></span>Projetos</div>
@@ -121,9 +119,31 @@
                     </div>
                 </div>
                 <!-- DIREITA -->
-                <div class="col-md-5 col-xl-4">
+                <div class="col-lg-5 col-xl-4 py-5">
                     <div class="row mx-0 px-3">
                         <h4>Siga-nos nas redes sociais</h4>
+                        <ul class="nav pt-2">
+                            <li class="nav-item pr-2 pl-0">
+                                <a class="btn btn-footer" role="button" href="/contato">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="btn btn-footer" role="button" href="/contato">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="btn btn-footer" role="button" href="/contato">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item pl-2 pr-0">
+                                <a class="btn btn-footer" role="button" href="/contato">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 60px;
-    line-height: 71px;
+    line-height: 118%;
     letter-spacing: -0.5px;
 }
 
@@ -60,11 +60,18 @@ h6 {
     letter-spacing: 0.15px;
 }
 
-input[type=text] {
-    border: 1px solid #9026C4;
-    font-size: 16px;
-    padding-bottom: 26px;
-    padding-top: 27px;
+input[type=email],
+input[type=text],
+textarea {
+    border: 1px solid #9026C4!important;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    font-size: 16px!important;
+    padding-bottom: 26px!important;
+    padding-top: 27px!important;
+}
+
+.bg-card-degrade {
+    background: linear-gradient(236.72deg, #57C52B 33.48%, #168463 106.69%, #269455 106.69%);
 }
 
 .bg-gold {
@@ -133,7 +140,7 @@ input[type=text] {
 }
 
 .text-dark-green {
-    color: #AA924C;
+    color: #0C4331;
 }
 
 .text-gold {
@@ -190,6 +197,10 @@ input[type=text] {
     height: calc(100vh - 88px);
 }
 
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
 .nav-item {
     padding-right: .5rem;
     padding-left: .5rem;
@@ -213,6 +224,32 @@ input[type=text] {
 
 
 /*Custom*/
+
+.blog-div {
+    max-width: 850px;
+}
+
+.blog-div .card {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-footer,
+.btn-footer:hover {
+    background: #AA924C;
+    border-radius: 50%;
+    color: white;
+    height: 57px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 57px;
+}
+
+.btn-footer i {
+    font-size: 34px;
+    position: relative;
+    top: 4px;
+}
 
 .btn-header,
 .btn-header:hover {
@@ -307,6 +344,10 @@ input[type=text] {
     line-height: 20px;
 }
 
+.h-blog-img {
+    min-height: 300px;
+}
+
 #header {
     background: linear-gradient(20.24deg, #0C4331 24.16%, #57C52B 91.39%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -343,14 +384,57 @@ input[type=text] {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+#i-parceiras .acordion {
+    font-weight: normal;
+}
+
+#i-parceiras .card {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#i-parceiras .card-body {
+    background: #D3D4D4;
+}
+
+#i-parceiras .card-header {
+    background: white;
+}
+
+#i-parceiras h5 {
+    font-weight: normal;
+}
+
+#quem-somos-div-2 {
+    background: linear-gradient(70.61deg, #168463 9.11%, #57C52B 97.36%);
+}
+
+.quem-somos-div {
+    height: 570px;
+}
+
+.quem-somos-img {
+    max-height: 600px;
+}
+
 @media only screen and (max-width: 991px) {
     .col-mantenedores {
         width: 33.3%;
+    }
+    .quem-somos-div {
+        height: auto;
+    }
+    .quem-somos-img {
+        max-width: 300px;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .col-mantenedores {
         width: 50%;
+    }
+    h2 {
+        font-size: 2.75rem;
     }
 }
