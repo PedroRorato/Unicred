@@ -10,6 +10,14 @@ footer {
     color: white;
 }
 
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
 footer span {
     background: #AA924C;
     display: block;

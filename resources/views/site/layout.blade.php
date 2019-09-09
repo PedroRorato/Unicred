@@ -97,14 +97,14 @@
                     </div>
                     <div class="row mx-0 px-3 py-3">
                         <div class="col-6">
-                            <div class="row py-2"><span class="mr-2"></span>Quem Somos</div>
-                            <div class="row py-2"><span class="mr-2"></span>Projetos</div>
-                            <div class="row py-2"><span class="mr-2"></span>Eventos</div>
+                            <a href="/quem-somos" class="row py-2"><span class="mr-2"></span>Quem Somos</a>
+                            <a href="/" class="row py-2"><span class="mr-2"></span>Projetos</a>
+                            <a href="/" class="row py-2"><span class="mr-2"></span>Eventos</a>
                         </div>
                         <div class="col-6">
-                            <div class="row py-2"><span class="mr-2"></span>Notícias</div>
-                            <div class="row py-2"><span class="mr-2"></span>Instituições Parceiras</div>
-                            <div class="row py-2"><span class="mr-2"></span>Contato</div>
+                            <a href="/" class="row py-2"><span class="mr-2"></span>Notícias</a>
+                            <a href="/" class="row py-2"><span class="mr-2"></span>Instituições Parceiras</a>
+                            <a href="/" class="row py-2"><span class="mr-2"></span>Contato</a>
                         </div>
                     </div>
                     <hr class="bg-gold mx-3">

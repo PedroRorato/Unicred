@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SiteController extends Model
+class Noticia extends Model
 {
-    //
+    protected $guarded = [];
 }
