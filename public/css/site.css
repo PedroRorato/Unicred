@@ -135,8 +135,10 @@ textarea {
     border-radius: 30px;
     border-width: 2px;
     box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.24);
-    height: 56px;
+    font-size: 1rem!important;
     min-width: 165px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .btn-unicred:hover {
@@ -304,14 +306,26 @@ textarea {
 }
 
 .col-carousel-text {
-    cursor: pointer;
-    position: absolute;
     bottom: 0;
+    cursor: pointer;
+    max-height: 116px;
+    position: absolute;
+    text-decoration: none!important;
+    transition: .4s ease-in-out;
+}
+
+.col-carousel-text:hover {
+    transition: .4s ease-in-out;
+}
+
+.col-carousel-text p {
+    max-height: 50px;
+    overflow: hidden;
 }
 
 .col-carousel-text-green {
     background-color: rgba(22, 132, 99, 0.6);
-    color: white;
+    color: white!important;
 }
 
 .col-carousel-text-green:hover {
@@ -320,7 +334,7 @@ textarea {
 
 .col-carousel-text-purple {
     background-color: rgba(144, 38, 196, 0.6);
-    color: white;
+    color: white!important;
 }
 
 .col-carousel-text-purple:hover {
@@ -365,13 +379,13 @@ textarea {
 
 #home-carousel-1 {
     background: url("../img/home-carousel-1.png") center no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 
 #home-carousel-2,
 #home-carousel-3 {
     background: url("../img/home-carousel-back1.png") center no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #home-div-2 {
@@ -414,6 +428,10 @@ textarea {
     font-weight: normal;
 }
 
+.mh-100 {
+    height: 100%;
+}
+
 #quem-somos-div-2 {
     background: linear-gradient(70.61deg, #168463 9.11%, #57C52B 97.36%);
 }
@@ -427,6 +445,10 @@ textarea {
 }
 
 @media only screen and (max-width: 991px) {
+    .card-pilares {
+        height: 230px;
+        width: 230px;
+    }
     .col-mantenedores {
         width: 33.3%;
     }
@@ -438,11 +460,29 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .card-pilares {
+        height: 170px;
+        width: 170px;
+    }
+}
+
 @media only screen and (max-width: 575px) {
+    .card-pilares {
+        height: auto;
+        width: 140px;
+        margin: auto;
+    }
+    .card-pilares h4 {
+        font-size: 1.5rem;
+    }
     .col-mantenedores {
         width: 50%;
     }
     h2 {
         font-size: 2.75rem;
+    }
+    #home-div-2 h5 {
+        font-size: 1rem!important;
     }
 }

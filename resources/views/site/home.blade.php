@@ -18,27 +18,33 @@
                             <h4 class="mx-auto bg-purple px-3 py-1">Pilares</h4>
                         </div>
                         <div class="row py-5 justify-content-between">
-                            <div class="card card-pilares text-center text-gold">
-                                <div class="row align-items-center h-100">
-                                    <div class="col">
-                                        <img class="mx-auto" src="{{ URL::asset('img/home-educacao.png') }}" width="88">
-                                        <h4 class="card-pilares-text pt-3">Educação</h4>
+                            <div class="linha col-6 col-sm-4">
+                                <div class="card card-pilares text-center text-gold">
+                                    <div class="row align-items-center h-100">
+                                        <div class="col">
+                                            <img class="mx-auto" src="{{ URL::asset('img/home-educacao.png') }}" width="88">
+                                            <h4 class="card-pilares-text pt-3">Educação</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card card-pilares text-center text-gold">
-                                <div class="row align-items-center h-100">
-                                    <div class="col">
-                                        <img class="mx-auto" src="{{ URL::asset('img/home-saude.png') }}" width="72">
-                                        <h4 class="card-pilares-text pt-3">Saúde</h4>
+                            <div class="linha col-6 col-sm-4">
+                                <div class="card card-pilares text-center text-gold">
+                                    <div class="row align-items-center h-100">
+                                        <div class="col">
+                                            <img class="mx-auto" src="{{ URL::asset('img/home-saude.png') }}" width="72">
+                                            <h4 class="card-pilares-text pt-3">Saúde</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card card-pilares text-center text-gold">
-                                <div class="row align-items-center h-100">
-                                    <div class="col">
-                                        <img class="mx-auto" src="{{ URL::asset('img/home-t-voluntario.png') }}" width="72">
-                                        <h4 class="card-pilares-text pt-3">Trabalho Voluntário</h4>
+                            <div class="linha col-sm-4 pt-4 pt-sm-0">
+                                <div class="card card-pilares text-center text-gold">
+                                    <div class="row align-items-center h-100">
+                                        <div class="col">
+                                            <img class="mx-auto" src="{{ URL::asset('img/home-t-voluntario.png') }}" width="72">
+                                            <h4 class="card-pilares-text pt-3">Trabalho Voluntário</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -77,37 +83,37 @@
 <div id="home-div-2">
     <div class="container">
         <div class="row py-5">
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-doacoes.png') }}" class="card-img-top">
                     <h5 class="text-center text-gold pb-2 pt-3">DOAÇÕES</h5>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-cultura.png') }}" class="card-img-top">
                     <h5 class="text-center text-purple pb-2 pt-3">CULTURA</h5>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-educacao.png') }}" class="card-img-top">
                     <h5 class="text-center text-blue pb-2 pt-3">EDUCAÇÃO</h5>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-social.png') }}" class="card-img-top">
                     <h5 class="text-center text-pink pb-2 pt-3">SOCIAL</h5>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-esporte.png') }}" class="card-img-top">
                     <h5 class="text-center text-green pb-2 pt-3">ESPORTES</h5>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-4 px-1 px-sm-2 px-lg-3 py-2 col-lg-2">
                 <div class="card">
                     <img src="{{ URL::asset('img/home-card-saude.png') }}" class="card-img-top">
                     <h5 class="text-center text-light-green pb-2 pt-3">SAÚDE</h5>
@@ -121,29 +127,17 @@
 <div id="home-div-3" class="pt-5">
     <div class="container pt-5">
         <div class="row px-3">
+            @foreach($noticias as $noticia)
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-green px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
+            <div class="col-sm-4 px-0 col-carousel" style="background: url({{ asset('storage/noticias/'.$noticia->foto) }}) center no-repeat;">
+                <a href="/noticias/{{ $noticia->id }}" class="col-carousel-text col-carousel-text-green px-3 py-3 w-100">
+                    <h5>{{ $noticia->titulo }}</h5>
+                    <p class="mb-0">{{ $noticia->texto }}</p>
+                </a>
             </div>
-            <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-green px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-green px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
-            </div>
+            @endforeach
         </div>
-        <div class="row pt-4"><button class="btn btn-unicred btn-outline-green mx-auto">VER MAIS</button></div>
+        <div class="row pt-4"><a href="/noticias" role="button" class="btn btn-unicred btn-outline-green mx-auto">VER MAIS</a></div>
     </div>
 </div>
 
@@ -151,29 +145,17 @@
 <div id="home-div-4" class="py-5">
     <div class="container py-5">
         <div class="row px-3">
+            @foreach($eventos as $evento)
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-purple px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
+            <div class="col-sm-4 px-0 col-carousel" style="background: url({{ asset('storage/eventos/'.$evento->foto) }}) center no-repeat;">
+                <a href="/eventos/{{ $evento->id }}" class="col-carousel-text col-carousel-text-purple px-3 py-3 w-100">
+                    <h5>{{ $evento->titulo }}</h5>
+                    <p class="mb-0">{{ $evento->texto }}</p>
+                </a>
             </div>
-            <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-purple  px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url('https://www.thebalancecareers.com/thmb/AXJKPGwewA_sUSpqGLtX6Vceif8=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/C-Users-Susan-Downloads-key-team-475333583-57a2ab2d5f9b589aa980cc9c.jpg') center no-repeat;">
-                <div class="col-carousel-text col-carousel-text-purple px-3 py-3">
-                    <h5>Notícia</h5>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio</p>
-                </div>
-            </div>
+            @endforeach
         </div>
-        <div class="row pt-4"><button class="btn btn-unicred btn-outline-purple mx-auto">VER MAIS</button></div>
+        <div class="row pt-4"><a href="/eventos" role="button" class="btn btn-unicred btn-outline-purple mx-auto">VER MAIS</a></div>
     </div>
 </div>
 
