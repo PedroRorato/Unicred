@@ -104,7 +104,7 @@
 <!-- DIV 3 -->
 <div id="home-div-3" class="pt-5">
     <div class="container pt-5">
-        <div class="row px-3">
+        <div class="row justify-content-center px-3">
             @foreach($noticias as $indexKey => $noticia)
             <!-- ELEMENT -->
             <div class="col-md-4 px-0 col-carousel {{ ($indexKey != 0) ? 'd-none d-md-block' : '' }}" style="background: url({{ asset('storage/noticias/'.$noticia->foto) }}) center no-repeat;">
@@ -122,7 +122,7 @@
 <!-- DIV 4 -->
 <div id="home-div-4" class="py-5">
     <div class="container py-5">
-        <div class="row px-3">
+        <div class="row justify-content-center px-3">
             @foreach($eventos as $indexKey => $evento)
 
             <!-- ELEMENT -->
