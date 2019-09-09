@@ -6,8 +6,6 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators mb-2">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div id="home-carousel-1" class="carousel-item active">
@@ -53,27 +51,7 @@
                 </div>
             </div>
         </div>
-        <div id="home-carousel-2" class="carousel-item">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col">
-                        <div class="row">
-                            <h4 class="bg-purple px-3 py-1">Missão</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <div id="home-carousel-3" class="carousel-item">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col">
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"></a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"></a>
     </div>

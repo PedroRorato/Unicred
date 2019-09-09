@@ -13,9 +13,7 @@
             <div class="col-lg-6">
                 <h2 class="text-gold pb-3">Quem Somos</h2>
                 <p>
-                    Organização com atuação no Estado do Rio Grande do Sul, sem fins lucrativos e com a finalidade específica de fomentar projetos de relevância,
-                    impacto e mérito, que sejam implantadas em conjunto com as singulares parceiras do Sistema Unicred, promovendo prosperidade nas comunidades de
-                    atuação.
+                    O coletivo de conselheiros, dirigentes, colaboradores e associados forma uma rede colaborativa, com dedicação, criatividade e compromisso social e ambiental, apoiado por empresas parceiras, como o sistema Ocergs-Sescoop/RS. Nas diferentes ações e projetos desenvolvidos, o voluntariado por parte de todos é sempre incentivado, pois é o trabalho voluntário que de fato faz acontecer o que fazemos.
                 </p>
             </div>
         </div>
@@ -29,11 +27,11 @@
             <div class="col-lg-7">
                 <h2 class="pb-3">O que fazemos</h2>
                 <p>
-                    O Instituto Unicred é uma associação vinculada à estratégia do Sistema Unicred, com finalidade e dedicação específicas para qualificar as
-                    práticas sociais das singulares, visando formular e/ou identificar projetos de mérito, relevância de impacto e retorno institucional.
-                    Não pretende substituir as iniciativas locais, mas emular iniciativas comuns e oferecer suporte para as práticas sociais locais.
-                    Ter uma personalidade jurídica própria, possibilitando receber doações de terceiros, firmar convênios, benefícios com imunidades e incentivos
-                    fiscais. Levar prosperidade às pessoas de vulnerabilidade social por meio da educação do trabalho, financeira e para a saúde.
+                        Sob inspiração das ações socioambientais que as diferentes instâncias do Sistema Unicred praticaram em sua trajetória de 30 anos, o Instituto Unicred RS foi criado em fevereiro de 2017, sendo constituído como uma organização sem fins lucrativos  na área de atuação do sistema Unicred RS. Estruturado sob os auspícios das cooperativas singulares do Estado, o instituto tem sede em Porto Alegre, no Rio Grande do Sul, onde passou a atuar a partir de dezembro de 2018.
+
+                        Em consonância com os preceitos do cooperativismo, no qual as pessoas são sua essência, o instituto exerce ativamente o sétimo entre os princípios que são os pilares do cooperativismo, aquele que prescreve “Interesse pela Comunidade”.  Assim, no caminho para se tornar formalmente uma Organização da Sociedade Civil de Interesse Público (OSCIP) já em 2020, o Instituto Unicred RS, junto com as cooperativas, trabalha como foco no desenvolvimento sustentável dessas comunidades, exercendo ações a partir de políticas estratégicas aprovadas pelo conjunto das pessoas identificadas com o Sistema Unicred.
+
+
                 </p>
             </div>
             <div class="col-lg-5 px-0">
@@ -53,8 +51,7 @@
             <div class="col-lg-7">
                 <h2 class="pb-3 text-gold">Interesse pela Comunidade</h2>
                 <p>
-                    Parte do resultado das singulares, da contribuição dos associados e das parceiras Institucionais é sempre investido em ações sociais para
-                     as comunidades locais.
+                        Parte do resultado das singulares, da contribuição dos associados e das parceiras Institucionais é sempre investido em ações sociais para as comunidades locais.
                 </p>
             </div>
         </div>
