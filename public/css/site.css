@@ -244,6 +244,16 @@ textarea {
     text-decoration: none;
 }
 
+.blog-div h5 {
+    max-height: 28px;
+    overflow: hidden;
+}
+
+.blog-div p {
+    max-height: 50px;
+    overflow: hidden;
+}
+
 .btn-footer,
 .btn-footer:hover {
     background: #AA924C;
@@ -316,6 +326,11 @@ textarea {
 
 .col-carousel-text:hover {
     transition: .4s ease-in-out;
+}
+
+.col-carousel-text h5 {
+    max-height: 28px;
+    overflow: hidden;
 }
 
 .col-carousel-text p {
@@ -444,6 +459,12 @@ textarea {
     max-height: 600px;
 }
 
+@media only screen and (max-width: 1199px) {
+    #home-div-2 h5 {
+        font-size: 1.25rem!important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .card-pilares {
         height: 230px;
@@ -470,7 +491,7 @@ textarea {
 @media only screen and (max-width: 575px) {
     .card-pilares {
         height: auto;
-        width: 140px;
+        width: 130px;
         margin: auto;
     }
     .card-pilares h4 {

@@ -1,10 +1,10 @@
 @extends('site.layout')
-@section('title') Projetos @endsection
-@section('button') #nav-projetos @endsection
+@section('title') Notícias @endsection
+@section('button') #nav-noticias @endsection
 @section('content')
 
 <!-- DIV 1 Imagem -->
-<div class="quem-somos-div h-blog-img" style="background: url('{{ asset('storage/projetos/'.$object->foto) }}') center no-repeat; background-size: cover"></div>
+<div class="quem-somos-div h-blog-img" style="background: url('{{ asset('storage/noticias/'.$object->foto) }}') center no-repeat; background-size: cover"></div>
 <!-- DIV 2 Texto -->
 
 <div class="container">
@@ -21,9 +21,9 @@
         @foreach($elements as $indexKey => $element)
         <!-- PRIMEIRO CARD -->
         <div class="col-md-6 py-3">
-            <a href="/projetos/{{ $element->id }}" class="card">
-                <img src="{{ asset('storage/projetos/'.$element->foto) }}" class="card-img-top">
-                <div class="card-body bg-card-degrade">
+            <a href="/noticias/{{ $element->id }}" class="card">
+                <img src="{{ asset('storage/noticias/'.$element->foto) }}" class="card-img-top">
+                <div class="card-body bg-green">
                     <h5 class="card-title text-white">{{ $element->titulo }}</h5>
                     <p class="card-text">{{ $element->texto }}</p>
                 </div>

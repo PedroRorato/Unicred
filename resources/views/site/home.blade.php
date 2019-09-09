@@ -17,7 +17,7 @@
                         <div class="row">
                             <h4 class="mx-auto bg-purple px-3 py-1">Pilares</h4>
                         </div>
-                        <div class="row py-5 justify-content-between">
+                        <div class="row py-4 py-sm-5 justify-content-between">
                             <div class="linha col-6 col-sm-4">
                                 <div class="card card-pilares text-center text-gold">
                                     <div class="row align-items-center h-100">
@@ -127,9 +127,9 @@
 <div id="home-div-3" class="pt-5">
     <div class="container pt-5">
         <div class="row px-3">
-            @foreach($noticias as $noticia)
+            @foreach($noticias as $indexKey => $noticia)
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url({{ asset('storage/noticias/'.$noticia->foto) }}) center no-repeat;">
+            <div class="col-md-4 px-0 col-carousel {{ ($indexKey != 0) ? 'd-none d-md-block' : '' }}" style="background: url({{ asset('storage/noticias/'.$noticia->foto) }}) center no-repeat;">
                 <a href="/noticias/{{ $noticia->id }}" class="col-carousel-text col-carousel-text-green px-3 py-3 w-100">
                     <h5>{{ $noticia->titulo }}</h5>
                     <p class="mb-0">{{ $noticia->texto }}</p>
@@ -145,9 +145,10 @@
 <div id="home-div-4" class="py-5">
     <div class="container py-5">
         <div class="row px-3">
-            @foreach($eventos as $evento)
+            @foreach($eventos as $indexKey => $evento)
+
             <!-- ELEMENT -->
-            <div class="col-sm-4 px-0 col-carousel" style="background: url({{ asset('storage/eventos/'.$evento->foto) }}) center no-repeat;">
+            <div class="col-md-4 px-0 col-carousel {{ ($indexKey != 0) ? 'd-none d-md-block' : '' }}" style="background: url({{ asset('storage/eventos/'.$evento->foto) }}) center no-repeat;">
                 <a href="/eventos/{{ $evento->id }}" class="col-carousel-text col-carousel-text-purple px-3 py-3 w-100">
                     <h5>{{ $evento->titulo }}</h5>
                     <p class="mb-0">{{ $evento->texto }}</p>
