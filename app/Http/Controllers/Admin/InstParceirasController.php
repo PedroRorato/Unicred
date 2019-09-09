@@ -30,7 +30,7 @@ class InstParceirasController extends Controller
     public function store(Request $request){
         //Validation
         request()->validate([
-            'foto' => ['required', 'image', 'mimes:jpeg,jpg,png', 'dimensions:min_width=1000,min_height=500', 'max:10000'],
+            'foto' => ['required', 'image', 'mimes:jpeg,jpg,png'],
             'texto' => ['required', 'string', 'min:5'],
             'nome' => ['required', 'string', 'min:3', 'max:255'],
         ]);
@@ -56,7 +56,7 @@ class InstParceirasController extends Controller
     public function update(Request $request, $id){
         //Validation
         request()->validate([
-            'foto' => ['image', 'mimes:jpeg,jpg,png', 'dimensions:min_width=1000,min_height=500', 'max:10000'],
+            'foto' => ['image', 'mimes:jpeg,jpg,png'],
             'texto' => ['required', 'string', 'min:5'],
             'nome' => ['required', 'string', 'min:3', 'max:255'],
         ]);
