@@ -10,9 +10,7 @@
 <div class="container">
     <div class="py-5 blog-div mx-auto px-3">
         <h3 class="pb-4">{{ $object->titulo }}</h3>
-        <p>
-            {{ $object->texto }}
-        </p>
+        {{ $object->texto }}
     </div>
 </div>
 <!-- DIV 3 Outros -->

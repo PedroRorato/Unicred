@@ -256,16 +256,16 @@
                 <div class="card h-100 p-4">
                     <h5 class="text-gold mb-3">Bancos</h5>
                     <p class="mb-1"><a href="https://www.riskbank.com.br/">> Risk Bank</a></p>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Febraban</a><</p>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> BNDES</a><</p>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> BACEN</a><</p>
+                    <p class="mb-1"><a href="https://portal.febraban.org.br/">> Febraban</a><</p>
+                    <p class="mb-1"><a href="https://www.bndes.gov.br/wps/portal/site/home">> BNDES</a><</p>
+                    <p class="mb-1"><a href="https://www.bcb.gov.br/">> BACEN</a><</p>
                 </div>
             </div>
             <div class="col-sm-6 px-3 py-2">
                 <div class="card h-100 p-4">
                     <h5 class="text-gold mb-3">Cooperativismo</h5>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> OCB - Organização das Cooperativas Brasileiras</a><</p>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Confederação Nacional de Auditoria Cooperativa</a></p>
+                    <p class="mb-1"><a href="https://www.ocb.org.br/">> OCB - Organização das Cooperativas Brasileiras</a><</p>
+                    <p class="mb-1"><a href="http://www.cnac.coop.br/index.aspx">> Confederação Nacional de Auditoria Cooperativa</a></p>
                     <p class="mb-1"><a href="https://www.riskbank.com.br/">> Instituições Financeiras de Desenvolvimento</a></p>
                 </div>
             </div>
