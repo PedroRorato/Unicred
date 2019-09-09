@@ -235,6 +235,10 @@ textarea {
 
 /*Custom*/
 
+.accordion .card-header {
+    cursor: pointer;
+}
+
 .blog-div {
     max-width: 850px;
 }

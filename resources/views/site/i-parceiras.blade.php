@@ -9,16 +9,16 @@
         <div class="py-5 blog-div mx-auto px-3">
             <h2 class="pb-4 text-gold">Instituições Parceiras</h2>
             <!-- FOREACH -->
-            @foreach($elements as $element)
+            @foreach($elements as $indexKey => $element)
             <!-- Element -->
-            <div class="accordion my-4" id="accordion1">
+            <div class="accordion my-4" id="accordion{{ $indexKey }}">
                 <div class="card">
                     <div class="card-header px-5 py-3" id="headingOne">
-                        <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                        <h5 class="mb-0" data-toggle="collapse" data-target="#collapse{{ $indexKey }}" aria-expanded="true">
                             {{ $element->nome }}
                         </h5>
                     </div>
-                    <div id="collapseOne" class="collapse show">
+                    <div id="collapse{{ $indexKey }}" class="collapse {{ ($indexKey == 0) ? 'show' : '' }}">
                         <div class="card-body px-5">
                             <div class="row">
                                 <div class="col-8">

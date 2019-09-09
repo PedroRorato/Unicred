@@ -31,7 +31,7 @@ class ProjetosController extends Controller
         //Validation
         request()->validate([
             'categoria' => ['required', 'string', 'min:3', 'max:30'],
-            'foto' => ['required', 'image', 'mimes:jpeg,jpg,png', 'dimensions:min_width=1000,min_height=500', 'max:10000'],
+            'foto' => ['required', 'image', 'mimes:jpeg,jpg,png'],
             'texto' => ['required', 'string', 'min:5'],
             'titulo' => ['required', 'string', 'min:3', 'max:255'],
         ]);
@@ -59,7 +59,7 @@ class ProjetosController extends Controller
         //Validation
         request()->validate([
             'categoria' => ['required', 'string', 'min:3', 'max:30'],
-            'foto' => ['image', 'mimes:jpeg,jpg,png', 'dimensions:min_width=1000,min_height=500', 'max:10000'],
+            'foto' => ['image', 'mimes:jpeg,jpg,png'],
             'texto' => ['required', 'string', 'min:5'],
             'titulo' => ['required', 'string', 'min:3', 'max:255'],
         ]);
