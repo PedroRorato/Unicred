@@ -298,12 +298,13 @@ textarea {
 }
 
 .card-pilares {
-    background: rgba(255, 255, 255, 0.7);
     align-items: center!important;
+    background: rgba(255, 255, 255, 0.7);
     border: 1px solid #9026C4;
     font-size: 34px;
     font-weight: 300!important;
     height: 250px;
+    margin: auto;
     width: 250px;
 }
 
@@ -379,6 +380,10 @@ textarea {
 .creditos {
     font-size: 14px;
     line-height: 20px;
+}
+
+#home-div-7 a {
+    color: #000000!important;
 }
 
 .h-blog-img {
@@ -492,7 +497,6 @@ textarea {
     .card-pilares {
         height: auto;
         width: 130px;
-        margin: auto;
     }
     .card-pilares h4 {
         font-size: 1.5rem;

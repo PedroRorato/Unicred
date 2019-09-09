@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Auth;
 use DB;
 use App\Evento;
+use App\InstParceira;
 use App\Noticia;
 use App\Projeto;
 use App\Http\Controllers\Controller;
@@ -82,8 +83,9 @@ class SiteController extends Controller
 
     public function iParceiras()
     {
-        //return view('site.home', compact('ab_p', 'ab_n', 'a_p', 'a_n', 'b_p', 'b_n', 'o_p', 'o_n', 'nn'));
-        return view('site.i-parceiras');
+        $elements = new InstParceira;
+        $elements = $elements->where('status', 'ATIVO')->get();
+        return view('site.i-parceiras', compact('elements'));
     }
 
     public function contato()

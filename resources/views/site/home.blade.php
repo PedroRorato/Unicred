@@ -169,6 +169,54 @@
             <div class="col-mantenedores px-3 py-2">
                 <div class="card">
                     <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Centro-Oeste</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Ijuí</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Integração</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Missões Noroeste</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
+                        <p class="mb-0 mx-auto text-center">Unicred Porto Alegre</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ELEMENT -->
+            <div class="col-mantenedores px-3 py-2">
+                <div class="card">
+                    <div class="row align-items-center h-100 mx-0">
                         <p class="mb-0 mx-auto text-center">Unicred Região da Campanha</p>
                     </div>
                 </div>
@@ -177,7 +225,7 @@
             <div class="col-mantenedores px-3 py-2">
                 <div class="card">
                     <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
+                        <p class="mb-0 mx-auto text-center">Unicred Região dos Vales</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +233,7 @@
             <div class="col-mantenedores px-3 py-2">
                 <div class="card">
                     <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
+                        <p class="mb-0 mx-auto text-center">Unicred Vale das Antas</p>
                     </div>
                 </div>
             </div>
@@ -193,95 +241,7 @@
             <div class="col-mantenedores px-3 py-2">
                 <div class="card">
                     <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
+                        <p class="mb-0 mx-auto text-center">Unicred VTRPP</p>
                     </div>
                 </div>
             </div>
@@ -317,18 +277,18 @@
             <div class="col-sm-6 px-3 py-2">
                 <div class="card h-100 p-4">
                     <h5 class="text-gold mb-3">Bancos</h5>
-                    <p class="mb-1">> Risk Bank</p>
-                    <p class="mb-1">> Febraban</p>
-                    <p class="mb-1">> BNDES</p>
-                    <p class="mb-1">> BACEN</p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Risk Bank</a></p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Febraban</a><</p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> BNDES</a><</p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> BACEN</a><</p>
                 </div>
             </div>
             <div class="col-sm-6 px-3 py-2">
                 <div class="card h-100 p-4">
                     <h5 class="text-gold mb-3">Cooperativismo</h5>
-                    <p class="mb-1">> OCB - Organização das Cooperativas Brasileiras</p>
-                    <p class="mb-1">> Confederação Nacional de Auditoria Cooperativa</p>
-                    <p class="mb-1">> Instituições Financeiras de Desenvolvimento</p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> OCB - Organização das Cooperativas Brasileiras</a><</p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Confederação Nacional de Auditoria Cooperativa</a></p>
+                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Instituições Financeiras de Desenvolvimento</a></p>
                 </div>
             </div>
         </div>
