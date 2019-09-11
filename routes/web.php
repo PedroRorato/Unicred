@@ -36,6 +36,8 @@ Auth::routes();
 Route::prefix('/admin')->group(function(){
     //Dashboard
     Route::get('/', 'Admin\InicialController@index');
+    Route::get('/conta', 'Admin\ContaController@show');
+    Route::patch('/conta', 'Admin\ContaController@update');
     //Eventos
     Route::get('/eventos', 'Admin\EventosController@index');
     Route::get('/eventos/create', 'Admin\EventosController@create');
@@ -79,7 +81,6 @@ Route::prefix('/admin')->group(function(){
     Route::patch('/usuarios/{id}', 'Admin\UsuariosController@update');
     Route::delete('/usuarios/{id}', 'Admin\UsuariosController@destroy');
 });
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('storage/{filename}', function ($filename)
 {
     $path = storage_path('public/' . $filename);

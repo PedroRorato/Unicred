@@ -8,7 +8,6 @@
 <a href="/admin/noticias/create" class="btn btn-primary shadow mb-3"><i class="fas fa-plus mr-2"></i>Adicionar</a>
 <div class="card shadow">
     <div class="card-body">
-        <hr>
         @if($amount != 0)
         <p class="form-text text-muted">
             Exibindo

@@ -266,7 +266,7 @@
                     <h5 class="text-gold mb-3">Cooperativismo</h5>
                     <p class="mb-1"><a href="https://www.ocb.org.br/">> OCB - Organização das Cooperativas Brasileiras</a><</p>
                     <p class="mb-1"><a href="http://www.cnac.coop.br/index.aspx">> Confederação Nacional de Auditoria Cooperativa</a></p>
-                    <p class="mb-1"><a href="https://www.riskbank.com.br/">> Instituições Financeiras de Desenvolvimento</a></p>
+                    <p class="mb-1"><a href="http://abde.org.br/">> Instituições Financeiras de Desenvolvimento</a></p>
                 </div>
             </div>
         </div>

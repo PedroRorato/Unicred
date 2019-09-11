@@ -7,6 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/icon-unicred.png') }}">
+
     <title>Unicred - @yield('title')</title>
 
     <!-- Scripts -->
@@ -61,13 +64,11 @@
                     </div>
                     <div id="collapseProfile" class="collapse" aria-labelledby="headingThree" data-parent="#menu-accordion">
                         <ul class="nav flex-column">
-                            <!--
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/conta">
                                     <i class="fas fa-user-edit mr-2"></i>Conta
                                 </a>
                             </li>
-                        -->
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <i class="fas fa-sign-out-alt mr-2"></i>Sair
@@ -88,7 +89,7 @@
             <a href="/admin/mantenedores" id="mantenedores-menu" class="btn btn-block btn-menu"><i class="fas fa-hand-holding-usd mr-2"></i>Mantenedores</a>
             <a href="/admin/noticias" id="noticias-menu" class="btn btn-block btn-menu"><i class="fas fa-newspaper mr-2"></i>Notícias</a>
             <a href="/admin/projetos" id="projetos-menu" class="btn btn-block btn-menu"><i class="fas fa-project-diagram mr-2"></i>Projetos</a>
-            <a href="/admin/usuarios" id="usuarios-menu" class="btn btn-block btn-menu disabled"><i class="fas fa-users mr-2"></i>Usuários</a>
+            <a href="/admin/usuarios" id="usuarios-menu" class="btn btn-block btn-menu"><i class="fas fa-users mr-2"></i>Usuários</a>
             <!-- END MENU -->
         </div>
         <!-- COPYRIGHT <a href="https://pedrororato.com" style="color:#c6ccd2"></a> -->
