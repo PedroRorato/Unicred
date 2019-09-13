@@ -69,6 +69,7 @@ h6 {
 }
 
 input[type=email],
+input[type=password],
 input[type=text],
 textarea {
     border: 1px solid #9026C4!important;
@@ -129,6 +130,14 @@ textarea {
 .btn-purple {
     background: #9026C4;
     color: white;
+    transition: .5s;
+}
+
+.btn-purple:hover {
+    background: white;
+    border-color: #9026C4;
+    color: #9026C4!important;
+    transition: .25s;
 }
 
 .btn-unicred {
@@ -283,7 +292,13 @@ textarea {
     height: 37px;
     padding-left: 0;
     padding-right: 0;
+    transition: .5s;
     width: 37px;
+}
+
+.btn-header:hover {
+    background: #AA924C;
+    transition: .25s;
 }
 
 .btn-header i {
@@ -299,6 +314,10 @@ textarea {
     font-weight: 300!important;
     height: 250px;
     width: 250px;
+}
+
+.card-login {
+    max-width: 500px;
 }
 
 .card-pilares {
@@ -367,14 +386,19 @@ textarea {
 
 .col-mantenedores .card {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    color: #000000;
     cursor: pointer;
     height: 60px;
+    padding: 0 .5rem;
+    text-decoration: none;
+    transition: .5s;
 }
 
 .col-mantenedores:hover .card {
     background-color: #AA924C;
     border-color: #AA924C;
     color: white;
+    transition: .5s;
 }
 
 #content {
@@ -461,7 +485,7 @@ textarea {
 }
 
 .quem-somos-div {
-    height: 570px;
+    height: 550px;
 }
 
 .quem-somos-img {
@@ -472,6 +496,13 @@ textarea {
     #home-div-2 h5 {
         font-size: 1.25rem!important;
     }
+    .nav-item {
+        text-align: center;
+    }
+    .nav-link:hover {
+        background-color: #AA924C;
+        color: white;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -481,6 +512,9 @@ textarea {
     }
     .col-mantenedores {
         width: 33.3%;
+    }
+    .d-none-resp {
+        display: none;
     }
     .quem-somos-div {
         height: auto;

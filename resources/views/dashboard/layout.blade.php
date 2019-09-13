@@ -34,7 +34,7 @@
         //Menu
         $(window).on('load', function() {
             $("@yield('collapse')").addClass("show");
-            $("@yield('menu')").css("border-left", "4px solid #3490dc");
+            $("@yield('menu')").css("border-left", "4px solid #168463");
             $("@yield('menu')").css("background-color", "#22262a");
         });
     </script>

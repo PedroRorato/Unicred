@@ -40,10 +40,20 @@
 }
 
 .bg-hemotify {
-    background-color: #cf0600!important;
-    border-color: #cf0600!important;
+    background-color: #168463!important;
+    border-color: #168463!important;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.bg-hemotify:hover {
+    background-color: #0C4331!important;
+    border-color: #0C4331!important;
+}
+
+.bg-hemotify a {
+    color: white;
+    text-decoration: none;
 }
 
 .btn-outline-danger {
@@ -54,6 +64,17 @@
 .btn-outline-danger:hover {
     background-color: #ad1c1c;
     border-color: #ad1c1c;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #168463!important;
+    border-color: #168463!important;
+}
+
+.btn-primary:hover {
+    background-color: #0C4331!important;
+    border-color: #0C4331!important;
 }
 
 #foto {

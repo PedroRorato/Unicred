@@ -1,17 +1,17 @@
-@extends('layouts.app')
-
+@extends('site.layout')
+@section('title') Resetar Senha @endsection
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
-
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="py-5 px-3">
+            <div class="card card-login mx-auto shadow">
                 <div class="card-body">
+                    <h2 class="card-title text-purple text-center">Verifique seu endereço de email</h2>
+                    <hr>
                     @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
-                        </div>
+                    <div class="alert alert-success" role="alert">
+                        {{ __('A fresh verification link has been sent to your email address.') }}
+                    </div>
                     @endif
 
                     {{ __('Before proceeding, please check your email for a verification link.') }}

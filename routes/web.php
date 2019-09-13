@@ -14,24 +14,36 @@
 //// SITE ////
 //Home
 Route::get('/', 'SiteController@home');
+//Contato
+Route::get('/contato', 'SiteController@contato');
+//Eventos
+Route::get('/eventos', 'SiteController@eventos');
+Route::get('/eventos/{id}', 'SiteController@showEvento');
+//Instituições Parceiras
+Route::get('/instituicoes-parceiras', 'SiteController@iParceiras');
+//Mantenedores
+Route::get('/mantenedores/{id}', 'SiteController@showMantenedor');
+//Notícias
+Route::get('/noticias', 'SiteController@noticias');
+Route::get('/noticias/{id}', 'SiteController@showNoticia');
 //Quem Somos
 Route::get('/quem-somos', 'SiteController@quemSomos');
 //Projetos
 Route::get('/projetos', 'SiteController@projetos');
 Route::get('/projetos/{id}', 'SiteController@showProjeto');
-//Eventos
-Route::get('/eventos', 'SiteController@eventos');
-Route::get('/eventos/{id}', 'SiteController@showEvento');
-//Notícias
-Route::get('/noticias', 'SiteController@noticias');
-Route::get('/noticias/{id}', 'SiteController@showNoticia');
-//Instituições Parceiras
-Route::get('/instituicoes-parceiras', 'SiteController@iParceiras');
-//Contato
-Route::get('/contato', 'SiteController@contato');
 
-Auth::routes();
-
+//// AUTH ////
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+//Logout
+Route::post('/logout', 'Auth\LogoutController@logout')->name('logout');
+//Password
+Route::prefix('/password')->group(function(){
+    Route::post('/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+    Route::post('/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
+    Route::get('/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+    Route::get('/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+});
 //// DASHBOARD ////
 Route::prefix('/admin')->group(function(){
     //Dashboard
@@ -81,8 +93,8 @@ Route::prefix('/admin')->group(function(){
     Route::patch('/usuarios/{id}', 'Admin\UsuariosController@update');
     Route::delete('/usuarios/{id}', 'Admin\UsuariosController@destroy');
 });
-Route::get('storage/{filename}', function ($filename)
-{
+//Storage
+Route::get('storage/{filename}', function ($filename){
     $path = storage_path('public/' . $filename);
 
     if (!File::exists($path)) {
@@ -96,4 +108,8 @@ Route::get('storage/{filename}', function ($filename)
     $response->header("Content-Type", $type);
 
     return $response;
+});
+//Home Redirect
+Route::get('home', function (){
+    return redirect('/admin');
 });

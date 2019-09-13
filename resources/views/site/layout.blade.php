@@ -24,7 +24,11 @@
     <script src="{{ asset('js/dashboard.js') }}" defer></script>
     <script type="text/javascript">
         $(window).on('load', function() {
-            $("@yield('button')").css("border-bottom", "1px solid #AA924C");
+            if ($(window).width() < 1199) {
+                $("@yield('button')").css("background-color", "#AA924C");
+            }else{
+                $("@yield('button')").css("border-bottom", "1px solid #AA924C");
+            }
         });
     </script>
     <title>Unicred - @yield('title')</title>
@@ -58,6 +62,7 @@
                     <li class="nav-item pr-4">
                         <a id="nav-contato" class="nav-link pb-0 px-0" href="/contato">Contato</a>
                     </li>
+                    <div class="row mx-0 justify-content-center pt-3 pt-xl-0">
                     <li class="nav-item px-1">
                         <a class="btn btn-header" role="button" href="/contato">
                             <i class="fab fa-lg fa-linkedin"></i>
@@ -78,6 +83,7 @@
                             <i class="fab fa-lg fa-facebook-f"></i>
                         </a>
                     </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -96,13 +102,14 @@
                     <div class="row mx-0 px-3 py-3">
                         <div class="col-6">
                             <a href="/quem-somos" class="row py-2"><span class="mr-2"></span>Quem Somos</a>
-                            <a href="/" class="row py-2"><span class="mr-2"></span>Projetos</a>
-                            <a href="/" class="row py-2"><span class="mr-2"></span>Eventos</a>
+                            <a href="/projetos" class="row py-2"><span class="mr-2"></span>Projetos</a>
+                            <a href="/eventos" class="row py-2"><span class="mr-2"></span>Eventos</a>
+                            <a href="/noticias" class="row py-2"><span class="mr-2"></span>Notícias</a>
                         </div>
                         <div class="col-6">
-                            <a href="/" class="row py-2"><span class="mr-2"></span>Notícias</a>
-                            <a href="/" class="row py-2"><span class="mr-2"></span>Instituições Parceiras</a>
-                            <a href="/" class="row py-2"><span class="mr-2"></span>Contato</a>
+                            <a href="/instituicoes-parceiras" class="row py-2"><span class="mr-2"></span>Instituições Parceiras</a>
+                            <a href="/contato" class="row py-2"><span class="mr-2"></span>Contato</a>
+                            <a href="/login" class="row py-2"><span class="mr-2"></span>Login</a>
                         </div>
                     </div>
                     <hr class="bg-gold mx-3">

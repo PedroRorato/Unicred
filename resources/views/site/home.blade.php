@@ -5,7 +5,10 @@
 <!-- DIV 1 -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators mb-2">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li class="d-none d-lg-block" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li class="d-none d-lg-block" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li class="d-none d-lg-block" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li class="d-none d-lg-block" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
         <div id="home-carousel-1" class="carousel-item active">
@@ -51,9 +54,58 @@
                 </div>
             </div>
         </div>
+        <div class="carousel-item d-none-resp">
+            <div class="container h-100">
+                <div class="row py-5 align-items-center h-100 text-center text-lg-left">
+                    <div class="col-lg-6 px-0 ">
+                        <img class="mx-auto img-fluid quem-somos-img" src="{{ URL::asset('img/quem-somos-1.png') }}">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-gold pb-3">Quem Somos</h2>
+                        <p>
+                            O coletivo de conselheiros, dirigentes, colaboradores e associados forma uma rede colaborativa, com dedicação, criatividade e compromisso social e ambiental, apoiado por empresas parceiras, como o sistema Ocergs-Sescoop/RS. Nas diferentes ações e projetos desenvolvidos, o voluntariado por parte de todos é sempre incentivado, pois é o trabalho voluntário que de fato faz acontecer o que fazemos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item d-none-resp">
+            <div class="container h-100">
+                <div class="row py-5 align-items-center h-100 text-center text-lg-left">
+                    <div class="col-lg-7">
+                        <h2 class="pb-3 text-gold">O que fazemos</h2>
+                        <p>
+                            Sob inspiração das ações socioambientais que as diferentes instâncias do Sistema Unicred praticaram em sua trajetória de 30 anos, o Instituto Unicred RS foi criado em fevereiro de 2017, sendo constituído como uma organização sem fins lucrativos  na área de atuação do sistema Unicred RS. Estruturado sob os auspícios das cooperativas singulares do Estado, o instituto tem sede em Porto Alegre, no Rio Grande do Sul, onde passou a atuar a partir de dezembro de 2018.
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"></a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"></a>
+                            Em consonância com os preceitos do cooperativismo, no qual as pessoas são sua essência, o instituto exerce ativamente o sétimo entre os princípios que são os pilares do cooperativismo, aquele que prescreve “Interesse pela Comunidade”.  Assim, no caminho para se tornar formalmente uma Organização da Sociedade Civil de Interesse Público (OSCIP) já em 2020, o Instituto Unicred RS, junto com as cooperativas, trabalha como foco no desenvolvimento sustentável dessas comunidades, exercendo ações a partir de políticas estratégicas aprovadas pelo conjunto das pessoas identificadas com o Sistema Unicred.
+
+
+                        </p>
+                    </div>
+                    <div class="col-lg-5 px-0">
+                        <img class="mx-auto img-fluid quem-somos-img" src="{{ URL::asset('img/quem-somos-2.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item d-none-resp">
+            <div class="container h-100">
+                <div class="row py-5 align-items-center h-100 text-center text-lg-left">
+                    <div class="col-lg-5 px-0">
+                        <img class="mx-auto img-fluid quem-somos-img" src="{{ URL::asset('img/quem-somos-3.png') }}">
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="pb-3 text-gold">Interesse pela Comunidade</h2>
+                        <p>
+                            Parte do resultado das singulares, da contribuição dos associados e das parceiras Institucionais é sempre investido em ações sociais para as comunidades locais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev d-none-resp" href="#carouselExampleIndicators" role="button" data-slide="prev"></a>
+        <a class="carousel-control-next d-none-resp" href="#carouselExampleIndicators" role="button" data-slide="next"></a>
     </div>
 </div>
 
@@ -142,87 +194,17 @@
 <div id="home-div-5" class="bg-light">
     <div class="container py-5">
         <h2 class="text-center text-gold pb-3">Mantenedores</h2>
-        <div class="row px-3">
+        <div class="row justify-content-center px-3">
+            @foreach($mantenedores as $mantenedor)
             <!-- ELEMENT -->
             <div class="col-mantenedores px-3 py-2">
-                <div class="card">
+                <a href="/mantenedores/{{ $mantenedor->id }}" class="card">
                     <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Centro-Oeste</p>
+                        <p class="mb-0 mx-auto text-center">{{ $mantenedor->nome }}</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Erechim</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Ijuí</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Integração</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Missões Noroeste</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Porto Alegre</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Região da Campanha</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Região dos Vales</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred Vale das Antas</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ELEMENT -->
-            <div class="col-mantenedores px-3 py-2">
-                <div class="card">
-                    <div class="row align-items-center h-100 mx-0">
-                        <p class="mb-0 mx-auto text-center">Unicred VTRPP</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
@@ -273,4 +255,13 @@
     </div>
 </div>
 </div>
+@endsection
+@section('javascript')
+<script>
+    $(window).on('load', function() {
+        if ($(window).width() < 992) {
+            $('.carousel').carousel('pause');
+        }
+    });
+</script>
 @endsection

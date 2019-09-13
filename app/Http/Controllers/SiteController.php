@@ -6,6 +6,7 @@ use Auth;
 use DB;
 use App\Evento;
 use App\InstParceira;
+use App\Mantenedor;
 use App\Noticia;
 use App\Projeto;
 use App\Http\Controllers\Controller;
@@ -20,16 +21,17 @@ class SiteController extends Controller
         //Eventos
         $eventos = new Evento;
         $eventos = $eventos->where('status', 'ATIVO')->limit(3)->get();
+        //Mantenedores
+        $mantenedores = new Mantenedor;
+        $mantenedores = $mantenedores->where('status', 'ATIVO')->get();
         //Notícias
         $noticias = new Noticia;
         $noticias = $noticias->where('status', 'ATIVO')->limit(3)->get();
-        //return view('site.home', compact('ab_p', 'ab_n', 'a_p', 'a_n', 'b_p', 'b_n', 'o_p', 'o_n', 'nn'));
-        return view('site.home', compact('eventos', 'noticias'));
+        return view('site.home', compact('eventos', 'mantenedores', 'noticias'));
     }
 
     public function quemSomos()
     {
-        //return view('site.home', compact('ab_p', 'ab_n', 'a_p', 'a_n', 'b_p', 'b_n', 'o_p', 'o_n', 'nn'));
         return view('site.quem-somos');
     }
 
@@ -81,6 +83,12 @@ class SiteController extends Controller
         return view('site.noticia', compact('elements', 'object'));
     }
 
+    public function showMantenedor($id)
+    {
+        $element = Mantenedor::findOrFail($id);
+        return view('site.mantenedor', compact('element'));
+    }
+
     public function iParceiras()
     {
         $elements = new InstParceira;
@@ -90,7 +98,6 @@ class SiteController extends Controller
 
     public function contato()
     {
-        //return view('site.home', compact('ab_p', 'ab_n', 'a_p', 'a_n', 'b_p', 'b_n', 'o_p', 'o_n', 'nn'));
         return view('site.contato');
     }
 }
