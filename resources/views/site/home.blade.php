@@ -189,6 +189,17 @@
         <div class="row pt-4"><a href="/eventos" role="button" class="btn btn-unicred btn-outline-purple mx-auto">VER MAIS</a></div>
     </div>
 </div>
+<!-- Hotjar Tracking Code for http://occam.club -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1509833,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 
 <!-- DIV 5 -->
 <div id="home-div-5" class="bg-light">

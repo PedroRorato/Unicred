@@ -31,6 +31,17 @@
             }
         });
     </script>
+    <!-- Hotjar Tracking Code for http://occam.club -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1509833,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
     <title>Unicred - @yield('title')</title>
 </head>
 <body>
@@ -63,26 +74,26 @@
                         <a id="nav-contato" class="nav-link pb-0 px-0" href="/contato">Contato</a>
                     </li>
                     <div class="row mx-0 justify-content-center pt-3 pt-xl-0">
-                    <li class="nav-item px-1">
-                        <a class="btn btn-header" role="button" href="/contato">
-                            <i class="fab fa-lg fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="btn btn-header" role="button" href="/contato">
-                            <i class="fab fa-lg fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="btn btn-header" role="button" href="/contato">
-                            <i class="fab fa-lg fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="btn btn-header" role="button" href="/contato">
-                            <i class="fab fa-lg fa-facebook-f"></i>
-                        </a>
-                    </li>
+                        <li class="nav-item px-1">
+                            <a class="btn btn-header" role="button" href="/contato">
+                                <i class="fab fa-lg fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="btn btn-header" role="button" href="/contato">
+                                <i class="fab fa-lg fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="btn btn-header" role="button" href="/contato">
+                                <i class="fab fa-lg fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="btn btn-header" role="button" href="/contato">
+                                <i class="fab fa-lg fa-facebook-f"></i>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </div>
